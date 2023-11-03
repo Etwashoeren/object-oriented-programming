@@ -1,18 +1,28 @@
 public class Homework5 {
-    class PersonalComputer{
+    public static void main(String[] args) {
+        PersonalComputer personalComputer = new PersonalComputer();
+        personalComputer.turnOn();
+    }
+    class PersonalComputer{//PersonalComputer.java
             Computer computer = new Computer("Core i7", "32GB", "2TB", "White", "700W");
             Monitor monitor = new Monitor("32 inch", "Black", "45W");
 
+            public void turnOn(){
+                computer.turnOn();
+                monitor.turnOn();
+                computer.printInfo();
+                monitor.printInfo();
+            }
     }
 
-    class Monitor{
-        private String moniterSize;
+    class Monitor{//Monitor.java
+        private String monitorSize;
         private String color;
 
         private String power;
 
-        public Monitor(String moniterSize, String color, String power){
-            this.moniterSize = moniterSize;
+        public Monitor(String monitorSize, String color, String power){
+            this.monitorSize = monitorSize;
             this.color = color;
             this.power = power;
         }
@@ -23,13 +33,13 @@ public class Homework5 {
 
         public void printInfo(){
             System.out.println("The spec of the monitor");
-            System.out.println("Size: " + moniterSize);
+            System.out.println("Size: " + monitorSize);
             System.out.println("Color: " + color);
             System.out.println("Power: " + power);
         }
     }
 
-    class Computer{
+    class Computer{//Computer.java
         private String cpu;
         private String memory;
         private String hd;
