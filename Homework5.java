@@ -33,9 +33,9 @@ public class Homework5 {
 
         public void printInfo(){
             System.out.println("The spec of the monitor");
-            System.out.println("Size: " + monitorSize);
-            System.out.println("Color: " + color);
-            System.out.println("Power: " + power);
+            System.out.println(" Size: " + monitorSize);
+            System.out.println(" Color: " + color);
+            System.out.println(" Power: " + power);
         }
     }
 
@@ -60,11 +60,11 @@ public class Homework5 {
 
         public void printInfo(){
             System.out.println("The spec of the computer");
-            System.out.println("Cpu: " + cpu);
-            System.out.println("Memory: " + memory);
-            System.out.println("HDD: " + hd);
-            System.out.println("Color: " + color);
-            System.out.println("Power: " + power);
+            System.out.println(" Cpu: " + cpu);
+            System.out.println(" Memory: " + memory);
+            System.out.println(" HDD: " + hd);
+            System.out.println(" Color: " + color);
+            System.out.println(" Power: " + power);
         }
     }
 }
