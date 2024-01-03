@@ -1,13 +1,19 @@
 public class Homework5 {
     public static void main(String[] args) {
-        PersonalComputer personalComputer = new PersonalComputer();
+        Computer computer = new Computer("Core i7", "32GB", "2TB", "White", "700W");
+        Monitor monitor = new Monitor("32 inch", "Black", "45W");
+        PersonalComputer personalComputer = new PersonalComputer(computer, monitor);
         personalComputer.turnOn();
     }
 }
 class PersonalComputer{//PersonalComputer.java
-    PersonalComputer(){}
-    Computer computer = new Computer("Core i7", "32GB", "2TB", "White", "700W");
-    Monitor monitor = new Monitor("32 inch", "Black", "45W");
+
+    Computer computer;
+    Monitor monitor;
+    PersonalComputer(Computer computer, Monitor monitor){
+        this.computer = computer;
+        this.monitor = monitor;
+    }
 
     public void turnOn(){
         computer.turnOn();
@@ -30,7 +36,7 @@ class Monitor{//Monitor.java
     }
 
     public void turnOn(){
-        System.out.println("Turning on the computer");
+        System.out.println("Turning on the monitor");
     }
 
     public void printInfo(){
